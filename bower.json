@@ -1,0 +1,25 @@
+{
+  "name": "floraui",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "floraluo"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "plugin"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11",
+    "requirejs": "~2.1.22"
+  }
+}

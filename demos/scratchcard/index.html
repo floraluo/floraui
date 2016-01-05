@@ -1,1 +1,31 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>scratchcard</title>
+	<link rel="stylesheet" href="../../css/scratchcard.css">
+</head>
+<body>
+	<h2>图片作为覆盖层</h2>
+	<div class="scratch-card scratch-card1">
+		<img src="../../lib/images/scratcher.jpg" class="layer" alt="">
+		<img src="../../lib/images/img1.jpg" alt="">
+		<canvas width="400" height="200"></canvas>
+	</div>
+	<h2>灰色背景为覆盖层</h2>
+	<div class="scratch-card scratch-card2">
+		<img src="../../lib/images/img1.jpg" alt="">
+		<canvas width="400" height="200"></canvas>
+	</div>
+</body>
+<script src="../../lib/dist/jquery.js"></script>
+<script src="../../ui/scratchcard.js"></script>
+<script>
+	$(function() {
+		var $scratchit1 = $('.scratch-card1').scratchcard();
+		var $scratchit2 = $('.scratch-card2').scratchcard({
+			layer: 2
+		});
+	});
+</script>
+</html>
